@@ -10,7 +10,7 @@ function saudacao(nome) {
 function calcular(a, b, operacao) {
     switch(operacao) {
         case 'soma':
-            return a - b;
+            return a + b;
         case 'subtracao':
             return a - b;
         case 'multiplicacao':
