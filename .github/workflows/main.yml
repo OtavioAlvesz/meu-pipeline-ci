@@ -38,9 +38,14 @@ jobs:
         node app.js
         echo "Aplicacao executada com sucesso!"
 
-    - name: 5. Mensagem de sucesso
+    - name: 5. Executando os testes automatizados
       run: |
-        echo "Parabens! Seu primeiro pipeline de CI esta funcionando!"
+        echo "Iniciando os testes..."
+        node test.js
+
+    - name: 6. Mensagem de sucesso
+      run: |
+        echo "Parabens! Pipeline funcionando com testes!"
         echo "Repositorio: ${{ github.repository }}"
         echo "Branch: ${{ github.ref_name }}"
         echo "Commit: ${{ github.sha }}"
